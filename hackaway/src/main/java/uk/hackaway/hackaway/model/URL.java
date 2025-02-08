@@ -7,58 +7,67 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class URL {
 
   @Id
-  private String id;
   private String name; // Website name
-  private boolean verified; // If the website is verified
-  private double userUp; // Upvote percentage
-  private double userDown; // Downvote percentage
+  private Integer percentage;
+//  private boolean verified; // If the website is verified
+//  private double userUp; // Upvote percentage
+//  private double userDown; // Downvote percentage
 
   public URL() {}
 
-  public URL(String name, boolean verified, double userUp, double userDown) {
+  public URL(String name, Integer percentage) {
     this.name = name;
-    this.verified = verified;
-    this.userUp = userUp;
-    this.userDown = userDown;
+    this.percentage = percentage;
+//    this.verified = verified;
+//    this.userUp = userUp;
+//    this.userDown = userDown;
   }
 
-  public String getId() {
-    return id;
-  }
+//  public String getId() {
+//    return id;
+//  }
 
   public String getName() {
     return name;
   }
-
-  public boolean isVerified() {
-    return verified;
+  
+  public Integer getPercentage() {
+	  return percentage;
+  }
+  
+  public void setPercentage(Integer percentage) {
+	  this.percentage = percentage;
   }
 
-  public double getUserUp() {
-    return userUp;
-  }
+//  public boolean isVerified() {
+//    return verified;
+//  }
+//
+//  public double getUserUp() {
+//    return userUp;
+//  }
+//
+//  public double getUserDown() {
+//    return userDown;
+//  }
 
-  public double getUserDown() {
-    return userDown;
-  }
-
-  public void setId(String id) {
-    this.id = id;
-  }
+//  public void setId(String id) {
+//    this.id = id;
+//  }
 
   public void setName(String name) {
     this.name = name;
   }
 
-  public void setVerified(boolean verified) {
-    this.verified = verified;
-  }
-
-  public void setUserUp(double userUp) {
-    this.userUp = userUp;
-  }
-
-  public void setUserDown(double userDown) {
-    this.userDown = userDown;
-  }
+//  public void setVerified(boolean verified) {
+//    this.verified = verified;
+//  }
+//
+//  public void setUserUp(double userUp) {
+//    this.userUp = userUp;
+//  }
+//
+//  public void setUserDown(double userDown) {
+//    this.userDown = userDown;
+//  }
 }

@@ -19,9 +19,5 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 export default function Page() {
-  return (
-    // <div className="gcse-search"></div>
-
-    <div className="gcse-search"></div>
-  );
+  return <div></div>;
 }

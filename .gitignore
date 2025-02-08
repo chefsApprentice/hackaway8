@@ -1,0 +1,4 @@
+/.metadata/
+./hackaway/src/main/resources/application.properties
+./frontend/hackaway/.env
+./hackaway/src/main/java/hackaway/hackaway/EnvVar.java
