@@ -2,3 +2,4 @@
 ./hackaway/src/main/resources/application.properties
 ./frontend/hackaway/.env
 ./hackaway/src/main/java/hackaway/hackaway/EnvVar.java
+/hackaway/src/main/java/uk/hackaway/hackaway/EnvVar.java

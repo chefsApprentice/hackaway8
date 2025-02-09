@@ -36,8 +36,8 @@ public class URLController {
 
 	@PostMapping
 	public ResponseEntity<List<URL>> processURLs(@RequestBody List<URL> urls) {
-		System.out.println("Received URLs:");
-		urls.forEach(url -> System.out.println(url.getName()));
+//		System.out.println("Received URLs:");
+//		urls.forEach(url -> System.out.println(url.getName()));
 		List<URL> res = new ArrayList<>();
 		urls.forEach(url -> {
 //			URL urlName = new URL();
@@ -45,8 +45,6 @@ public class URLController {
 //			Example<URL> exUrl = Example.of(urlName);
 			if ((urlRepository.findById(url.getName())).orElse(null) != null) {
 				URL newUrl = urlRepository.findById(url.getName()).orElse(null);
-				System.out.println("resExisting");
-				System.out.println(newUrl.getPercentage());
 				res.add(newUrl);
 			} else {
 				

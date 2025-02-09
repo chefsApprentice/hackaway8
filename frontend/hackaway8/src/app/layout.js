@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div className="gcse-searchresults-only">{children}</div>
+        {/* <div className="gcse-searchresults-only">{children}</div> */}
         <main>{children}</main>
       </body>
     </html>

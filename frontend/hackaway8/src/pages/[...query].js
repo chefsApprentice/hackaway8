@@ -21,6 +21,8 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import Results from "@/components/Results";
 import axios from "axios";
+import Link from "next/link";
+import Footer from "@/components/Footer";
 // import mockData from "../../src/mockData.json" assert { type: "json" };
 
 export default function Page() {
@@ -109,9 +111,15 @@ export default function Page() {
             sx={{ flexDirection: "row", display: "flex" }}
             spacing={32}
           >
-            <Typography variant="h4" component="h1" sx={{ mr: 4, mt: 1 }}>
-              ByeBAI
-            </Typography>
+            <Link href="/" style={{ textDecoration: "none" }}>
+              <Typography
+                variant="h4"
+                component="h1"
+                sx={{ mr: 4, mt: 1, color: "black" }}
+              >
+                ByeBAI
+              </Typography>
+            </Link>
 
             <FormControl fullWidth sx={{ m: 1 }}>
               <InputLabel htmlFor="outlined-adornment-amount">
@@ -144,7 +152,9 @@ export default function Page() {
         </Container>
       </Container>
 
-      <Divider sx={{ mt: 4 }} />
+      <Footer />
+
+      {/* <Divider sx={{ mt: 4 }} />
       <Box
         sx={{
           p: 1,
@@ -155,7 +165,7 @@ export default function Page() {
           Thank you for using the app. Make sure you use your own api key, if it
           is not working.
         </Typography>
-      </Box>
+      </Box> */}
     </div>
   );
 }
