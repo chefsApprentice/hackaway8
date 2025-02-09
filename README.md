@@ -4,7 +4,8 @@ Search engine to detect AI search results. Made for the Royal Hackaway 8 hackath
 ![Alt text]([https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/259/857/datas/original.png](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/259/635/datas/original.png))
 __Byebai in action__
 
-See the video demo here: [link](https://youtu.be/qWf6gMIIbMc?si=JV-ww4uBkgjMG_oa)
+See the video demo [here](https://youtu.be/qWf6gMIIbMc?si=JV-ww4uBkgjMG_oa).
+Scroll to the bottom to see run instructions.
 
 ## What it does
 Webpage that gets search results from google, and checks it against cached or anthropic AI results. Checking not just if it is AI generated but checking the format and content. 
@@ -30,3 +31,20 @@ __Architecture Diagram__
 > DNS like architecture for checking domains, perhaps with white and blacklists reviewed by humans
 > Switching db to redis and using caching more efficiently
 > Training models
+
+## How to run
+### Env variables
+> 1. Backend setup: Ensure that you have anthropic ai key in envVar.java in hackaway main folder. Ensure that you have api keys set up in application properties.
+> 2. Frontend setup: nsure you set up env variables with google search api key (there is an example.env in the frontend folder) 
+
+### Dependencies
+> `cd ./frontend/hackaway`
+> `npm install`
+
+### Run program
+> 1. Frontend.
+> `cd ./frontend/hackaway`
+> `npm run dev`
+> 2. Backend
+> `cd ./hackaway`
+> `mvn spring-boot:run`
