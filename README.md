@@ -1,10 +1,10 @@
 # Say byebye to AI with ByeBAI.
-Search engine to remove AI search results. Made for the Royal Hackaway 8 hackathon.
+Search engine to detect AI search results. Made for the Royal Hackaway 8 hackathon.
 
-## Inspiration
-Why get rid of AI, it does my homework !?
-Whilst AI has its uses, it tends to generate specific types of pages that seem useful but are actually pretty boring and uninformative.
-Google filters by quality, not AI; this allows LLM's to generate pages that appeal to the algorithm rather than quality posts.
+![Alt text]([https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/259/857/datas/original.png](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/259/635/datas/original.png))
+__Byebai in action__
+
+See the video demo here: [link](https://youtu.be/qWf6gMIIbMc?si=JV-ww4uBkgjMG_oa)
 
 ## What it does
 Webpage that gets search results from google, and checks it against cached or anthropic AI results. Checking not just if it is AI generated but checking the format and content. 
@@ -26,11 +26,7 @@ __Architecture Diagram__
 > 4. IF unseen, a web scraper scrapers a 1000 lines of display content and then feeds it into a model 
 > 5. Server returns list of URLs
 
-## Accomplishments that we're proud of
-> 1. Works with relatively good accuracy
-> 2. Gets some false positives, but these tend to be well known sites with similar archetypes, and the ai warning is easy to ignore.
-
-## What's next for ByeBAI
+## Possible improvements
 > DNS like architecture for checking domains, perhaps with white and blacklists reviewed by humans
 > Switching db to redis and using caching more efficiently
 > Training models
