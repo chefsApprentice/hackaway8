@@ -1,7 +1,7 @@
 # Say byebye to AI with ByeBAI.
 Search engine to detect AI search results. Made for the Royal Hackaway 8 hackathon.
 
-![Alt text](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/259/635/datas/original.png)
+![Alt text](./image.png)
 __Byebai in action__
 
 See the video demo [here](https://youtu.be/qWf6gMIIbMc?si=JV-ww4uBkgjMG_oa).
